@@ -1,4 +1,5 @@
 html{
+    height: -webkit-fill-available;
     font-size: 18px;
     line-height: 1.67rem;
     background-color: #fffefe;
@@ -27,7 +28,6 @@ p, li, ol, ul{
 }
 
 .container{
-    min-height: 100vh;
     display: flex;
     flex-flow: column;
 }
