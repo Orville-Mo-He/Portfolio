@@ -247,21 +247,36 @@ li{
     flex-shrink: 0;
 }
 .ProjectImage{
-    height: auto;
-    padding-left: 10vw;
-    flex-basis: 100%;
-    width: 70%;
+    display: block;
+    margin: 0 auto;
+    /* padding-left: 10vw; */
+    /* flex-basis: 100%; */
+    max-width:100%;
+}
+.ProjectImageContainer{
+    align-self: center;
+
 }
 
 #untitledimg{
-    flex-basis: 100%;
-    border: 15px solid black;
-    border-right: 14vw solid black;
-    border-left: 14vw solid black;
-
-    /* border-right: 25vw solid black; */
+    /* flex-basis: 100%; */
+    /* border-top: 1px solid black;
+    border-bottom: 1px solid black; */
+    background-color: rgb(29, 29, 29);
+    -moz-box-shadow:    inset 0 0 20px #000000;
+    -webkit-box-shadow: inset 0 0 20px #000000;
+    box-shadow:         inset 0 0 20px #000000;
     align-self: center;
+    width: 100vw;
 }
+#untitledimg > img{
+
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    max-width: 80%;
+
+}
+
 .quick_info{
     display: flex;
     flex-flow: row;
@@ -300,7 +315,7 @@ li{
     margin-bottom: 1.777rem;
     padding-left: 0;
     width: auto;
-    border: .25pt solid darkgrey
+    border: 1px solid darkgrey
 }
 #adobe-dc-view{
     height: 90vh;
