@@ -111,14 +111,16 @@ nav>ul>li>a:active{
 }
 
 #navlinks{
-    height: 80vh;
+
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
     flex-basis: 100%;
     justify-self: center;
     display: none;
-    justify-content: space-evenly;
     flex-flow: column nowrap;
+    justify-content: space-evenly;
     /* background-color: darkgray; */
-    padding: 10vh 10vw;
+    padding: 0 10vw;
 }
 
 .indvNavLink{
@@ -296,6 +298,9 @@ li{
 }
 .TeamMembers:first-child{
     padding-top: .33rem;
+}
+.design_categorys *{
+    padding-bottom: .5rem;
 }
 
 #Powing .projectIntro{
