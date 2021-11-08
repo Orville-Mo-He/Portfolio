@@ -46,6 +46,7 @@ footer>p{
 }
 
 header{
+    background-color: #B8AAA0;
     top: 0;
     position: sticky;
     width: 100vw;
@@ -60,7 +61,6 @@ header{
 nav{
     top: 0;
     position: sticky;
-    background-color: #B8AAA0;
     color: white;
     flex-basis: 100vw;
     display: flex;
@@ -142,13 +142,6 @@ nav>ul>li>a:active{
     display: flex;
     flex-basis: 100%;
     flex-flow:  column nowrap;
-}
-
-#BodyIntroPic{
-    align-self: center;
-    display: absolute;
-    width: 70%;
-    padding: 5% 0;
 }
 
 .PageIntro{
@@ -355,4 +348,143 @@ li{
 
 .PaperTopicList{
     padding-bottom: 1rem;
+}
+
+
+
+
+@media screen and (min-width:850px){
+
+    .container{
+        max-width: auto;
+        display: grid;
+        grid-template-columns:repeat(12, 1fr);
+        column-gap: 1rem;
+    }
+
+    #BurgerIcon{
+        display: none;
+    }
+    #CloseMenuIcon{
+        display: none;
+    }
+    header{
+        width: 100%;
+        grid-column: 1 / span 2;
+        max-height: 100vh;
+        align-items: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .MyInfo{
+        padding-left: 1rem;
+        margin-top: 1rem;
+        /* width: 50%; */
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        align-items: flex-start;
+        /* justify-content: center; */
+
+    }
+    .MyInfo *{
+        color: white;
+    }
+    .MyInfo *:not(#HeaderLogo>img, #HeaderLogo){
+        padding-left: .333rem;
+    }
+
+    .MyInfo h1{
+        font-size: 1.333rem;
+
+    }
+    #HeaderLogo>img{
+        width: 50%;
+    }
+    nav{
+        padding-left: 1rem;
+
+        margin-top: 8.3333vh;
+
+        display: flex;
+        flex-flow: column nowrap;
+        text-decoration: none;
+    }
+
+    #navlinks{
+        line-height: 1.333rem;
+        flex-basis: 100%;
+        justify-self: center;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        row-gap: 1rem;
+        /* background-color: darkgray; */
+        padding: 0;
+        padding-left: .333rem;
+
+    }
+    .indvNavLink{
+        color: #eee4de;
+        width: auto;
+        font-size: 1rem;
+
+    }
+
+    #currentPage::after{
+        color:rgba(29, 29, 29,0);
+        content: none;
+    }
+    #currentPage{
+        font-size: 1.333rem;
+        color: white;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+    }
+
+    .indvNavLink:hover, #currentPage:hover{
+        text-decoration: underline;
+        color: white;
+        text-decoration-thickness: 3px;
+        font-size: 1.6777rem;
+    }
+
+    #NavLogo{
+        display: none;
+    }
+
+
+    #mainBody{
+        width: auto;
+        grid-column: 3/ span 10;
+    }
+
+    #untitledimg{
+        /* flex-basis: 100%; */
+        /* border-top: 1px solid black;
+        border-bottom: 1px solid black; */
+        background-color: rgb(29, 29, 29);
+        -moz-box-shadow:    inset 0 0 20px #000000;
+        -webkit-box-shadow: inset 0 0 20px #000000;
+        box-shadow:         inset 0 0 20px #000000;
+        align-self: center;
+        width: auto;
+    }
+    .Project, .PapersList{
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 6vh 0;
+        align-items: flex-start;
+    }
+    .ProjectImage{
+        display: inline;
+        margin: 0;
+        /* padding-left: 10vw; */
+        /* flex-basis: 100%; */
+        max-width:25%;
+    }
+
+
+
 }
