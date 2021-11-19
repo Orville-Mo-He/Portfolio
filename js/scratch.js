@@ -17,7 +17,6 @@ function myFunction() {
         footer.style.display = 'block';
         mobileNavLogo.style.display = 'block'
 
-
     } else {
         navlinks.style.display = "flex";
         burger.style.display = "none";
@@ -26,10 +25,27 @@ function myFunction() {
         footer.style.display = 'none';
         mobileNavLogo.style.display = 'none'
 
-
     }
 
 }
+
+//this is to put out the fire from above.
+//basically if I opened and closed the hamburger menu while in mobile and then
+//made the viewport bigger, navlinks would stay hidden despite the css.
+//relevant for tablets.
+window.onresize = windowResized;
+
+function windowResized(){
+
+    if (window.innerWidth > 850){
+        // console.log('Hi')
+        navlinks.style.display = "flex";
+    }
+    else if (window.innerWidth < 850){
+        navlinks.style.display = "none";
+    }
+}
+
 
 document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
     var adobeDCView = new AdobeDC.View({clientId: "a6fbbfe327884c68b99c32062e40e1eb", divId: "adobe-dc-view"});
