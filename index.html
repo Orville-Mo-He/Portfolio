@@ -15,14 +15,11 @@
 
 <body class="container">
     <!-- <div class="skip"><a href="#main">Skip to Main Content</a></div> -->
-    <!--
-        desktop: flex row
-        mobile: flex column
-    -->
+
     <header>
         <div class="MyInfo">
             <a href="index.html" id="HeaderLogo"><img src="assets/Home/SVG/Mountainous Logo White.svg" alt="Logo"></a>
-            <h1>Orville Mo-He Design</h1>
+            <h1>Orville Mo&#8209He Design</h1>
             <a href="mailto:moheo@umich.edu">moheo@umich.edu</a>
         </div>
         <nav id='nav'>
@@ -46,7 +43,7 @@
     </header>
     <main id="mainBody">
         <!-- desktop: flex column -->
-
+        <h1 id="hidden">Orville Mo-He Design</h1>
         <div class="PageIntro">
             <p id="hello"><strong>Hellos!</strong></p>
             <p>I'm Orville.</p>
@@ -61,9 +58,9 @@
              -->
             <div class="SectionHeader">
                 <h2>Some of my projects: </h2>
-                <a href="design.html" id="viewalldes">(find all of my design projects here)</a>
+                <hr class="section_divider">
             </div>
-            <hr>
+            <a href="design.html" id="viewalldes">find all of my design projects here</a>
             <!--Project 1-------------------------- -->
             <div class="Project">
                 <!-- Destop: flex row; Mobile: flex column -->
@@ -74,8 +71,7 @@
                     <div>
                         <p class="ProjectDescription">ATMOS is a smart diffuser designed
                             for small living spaces that helps <em>bring the outside in.</em><br>
-                            <a class="viewProject" href="">view project <i
-                                    class="fas fa-chevron-right fa-xs"></i></a>
+                            <a class="viewProject" href="">view project <i class="fas fa-chevron-right fa-xs"></i></a>
                             (NOT ACTUALLY BUILT YET, see project 3 (Untitled) for example project page)
                         </p>
                     </div>
@@ -87,37 +83,50 @@
 
                 <ol class="quick_info">
 
-                    <li>
-                        <ol>
-                            <li class="client">
-                                <ul>For:
-                                    <li class=clientSubBullet>
-                                        University of Michigan <br>
-                                        ARTDES 416 / TO 448: <br>
-                                        Integrated Product Design
-                                    </li>
-                                </ul>
+                    <li class="client">
+                        <ul>
+                            <li class='qi_label'>For:</li>
+                            <li><hr class="qi_underline"></li>
+                            <li class=clientSubBullet>
+                                University of Michigan <br>
+                                ARTDES 416 / TO 448: <br>
+                                Integrated Product Design
                             </li>
+                        </ul>
+                    </li>
 
+                    <li>
+                        <ul>
+                            <li class='qi_label'>Team Members:</li>
+                            <li><hr class="qi_underline"></li>
                             <li>
-                                <ul class='Team'>Team Members:
+                                <ul  class='Team'>
                                     <li class="TeamMembers">Sirisha Billa</li>
                                     <li class="TeamMembers">Katherine Forest</li>
                                     <li class="TeamMembers">Michael Rigney</li>
                                     <li class="TeamMembers">Daisy Hall</li>
                                     <li class="TeamMembers">Frank Shen</li>
                                 </ul>
+
                             </li>
-                        </ol>
+                        </ul>
                     </li>
 
                     <li>
-                        <ul class="design_categorys">
-                            <li>UX Design</li>
-                            <li>UX Research</li>
-                            <li>Protyping & Testing</li>
-                            <li>Branding</li>
+                        <ul>
+                            <li class='qi_label'>Project Categories</li>
+                            <li><hr class="qi_underline"></li>
+                            <li>
+                                <ul class="design_categorys">
+                                    <li>UX Design</li>
+                                    <li>UX Research</li>
+                                    <li>Protyping & Testing</li>
+                                    <li>Branding</li>
+                                </ul>
+                            </li>
+
                         </ul>
+
                     </li>
                 </ol>
             </div>
@@ -128,11 +137,10 @@
 
                     <h3 class='ProjectTitle'>Po Wing Hong</h3> <!-- Destop: Order 1; Mobile Order 2 -->
 
-                    <div>
-                        <p class="ProjectDescription">Po Wing Hong is a Asian supermarket and
+                    <div class="ProjectDescription">
+                        <p>Po Wing Hong is a Asian supermarket and
                             supplier based in the heart of New York City's Chinatown.<br>
-                            <a class="viewProject" href="">view project <i
-                                    class="fas fa-chevron-right fa-xs"></i></a>
+                            <a class="viewProject" href="">view project <i class="fas fa-chevron-right fa-xs"></i></a>
                             (NOT ACTUALLY BUILT YET, see project 3 (Untitled) for example project page)
                         </p>
                     </div>
@@ -144,29 +152,33 @@
 
                 <ol class="quick_info">
 
-                    <li>
-                        <ol>
-                            <li class="client">
-                                <ul>For:
-                                    <li class=clientSubBullet>
-                                        The Pratt Institute <br>
-                                        DES-730A <br>
-                                        Transformation Design A<br>
-
-                                    </li>
-                                </ul>
+                    <li class="client">
+                        <ul>
+                            <li class='qi_label'>For:</li>
+                            <li><hr class="qi_underline"></li>
+                            <li class=clientSubBullet>
+                                The Pratt Institute <br>
+                                DES-730A <br>
+                                Transformation Design A<br>
                             </li>
-                        </ol>
-                    </li>
-
-                    <li>
-                        <ul class="design_categorys">
-                            <li>Business Analysis</li>
-                            <li>Stakeholder Analysis</li>
-                            <li>SWOT Analysis</li>
-                            <li>Business Strategy</li>
                         </ul>
                     </li>
+
+                    <li>
+                        <ul>
+                            <li class='qi_label'>Project Categories</li>
+                            <li><hr class="qi_underline"></li>
+                            <li>
+                                <ul class="design_categorys">
+                                    <li>Business Analysis</li>
+                                    <li>Stakeholder Analysis</li>
+                                    <li>SWOT Analysis</li>
+                                    <li>Business Strategy</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
                 </ol>
             </div>
             <!--Project 3 -------------------------- -->
@@ -186,35 +198,42 @@
                     </div>
                 </div>
 
-                <div class="ProjectImageContainer"  id='untitledimg'>
-                    <img class='ProjectImage' src="assets\Visual Language A\Set2\img (10).jpg" alt="Collage of a word (sorry), lines, and an upside-down image of a person screaming.">
+                <div class="ProjectImageContainer" id='untitledimg'>
+                    <img class='ProjectImage' src="assets\Visual Language A\Set2\img (10).jpg"
+                        alt="Collage of a word (sorry), lines, and an upside-down image of a person screaming.">
                 </div>
-                
+
                 <ol class="quick_info">
 
-                    <li>
-                        <ol>
-                            <li class="client">
-                                <ul>For:
-                                    <li class=clientSubBullet>
-                                        The Pratt Institute <br>
-                                        DES-710A: <br>
-                                        Visual Language A
-                                    </li>
-                                </ul>
+
+                    <li class="client">
+                        <ul>
+                            <li class='qi_label'>For:</li>
+                            <li><hr class="qi_underline"></li>
+                            <li class=clientSubBullet>
+                                The Pratt Institute <br>
+                                DES-710A: <br>
+                                Visual Language A
                             </li>
-                        </ol>
-                    </li>
-
-                    <li>
-                        <ul class="design_categorys">
-                            <li>Graphic Design</li>
-                            <li>Collage</li>
-                            <li>Visual Language Exploration</li>
-
-
                         </ul>
                     </li>
+
+                    <li>
+                        <ul>
+                            <li class='qi_label'>Project Categories</li>
+                            <li><hr class="qi_underline"></li>
+                            <li>
+                                <ul class="design_categorys">
+                                    <li>Graphic Design</li>
+                                    <li>Collage</li>
+                                    <li>Visual Language Exploration</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
                 </ol>
             </div>
 
