@@ -1,7 +1,8 @@
 *{
     box-sizing: border-box;
 }
-html, footer{
+
+div, html, footer{
     animation-name: Fade;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -16,6 +17,8 @@ footer{
         background-color: black;
     }
 }
+
+
 nav{
     animation: navshadow 2s forwards;
 }
@@ -29,11 +32,28 @@ nav{
     }
 }
 
+#NavAid{
+    animation-name: NavFire;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes NavFire {
+    0%{
+    }
+    100%{
+        background-color: transparent;
+    }
+}
+
 h1, h2, h3{
     color: #fffefe;
 }
 p, li, ol, ul{
     color: #e5e4e3;
+}
+.back_to{
+    color: rgb(122, 122, 122);
 }
 
 .Projectintro{

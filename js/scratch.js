@@ -66,7 +66,7 @@ function scrollFunction() {
     var top = document.getElementById("NavAid")
 
     if (document.body.scrollTop > h/3 || document.documentElement.scrollTop > h/3) {
-      top.style.display = "flex";
+      top.style.display = "block";
     } else {
       top.style.display = "none";
     }

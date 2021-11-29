@@ -9,9 +9,10 @@
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://kit.fontawesome.com/8a8818c03d.js" crossorigin="anonymous"></script>
-    <title>Orville Mo-He Design</title>
+    <title>Orville Mo-He's Design Work</title>
     <script src="js/scratch.js"></script>
 </head>
+
 
 <body class="container">
     <!-- <div class="skip"><a href="#main">Skip to Main Content</a></div> -->
@@ -43,7 +44,7 @@
     </header>
     <main id="mainBody">
         <!-- desktop: flex column -->
-
+        <h1 class="displayNone">Orville Mo-He Design</h1>
         <div class="PageIntro">
             <h1 id="PageTitle">design</h1>
             <p>"to make, shape," ultimately from Latin <em>designare</em> "mark out, point out; devise; choose, designate, appoint," from de "out" + <em>signare</em> "to mark," from signum "identifying mark, sign".<br><br>
@@ -51,26 +52,113 @@
                 The Italian verb disegnare in 16c. developed the senses "to contrive, plot, intend," and "to draw, paint, embroider, etc." French took both these senses from Italian, in different forms, and passed them on to English, which uses design in all senses.</p>
             </p>
         </div>
-        <hr>
         <div class="Project_Highlights">
+            <!--
+                desktop: flex column
+                mobile: column
+             -->
+            <div class="SectionHeader">
+                <h2>Some of my projects: </h2>
+                <hr class="section_divider">
+            </div>
+            <a href="design.html" id="viewalldes">find all of my design projects here</a>
             <!--Project 1-------------------------- -->
             <div class="Project">
                 <!-- Destop: flex row; Mobile: flex column -->
                 <div class='projectIntro'>
 
-                    <h3 class='ProjectTitle'>ATMOS</h3> <!-- Destop: Order 1; Mobile Order 2 -->
+                    <h3 class='ProjectTitle'>Urban Outreach NYC</h3> <!-- Destop: Order 1; Mobile Order 2 -->
+                    <p class="ProjectDescription">The Urban Outreach Center NYC
+                        is a "human services nonprofit, committed to ending the
+                        hunger gap in East Harlem and the Upper East Side for
+                        food-insecure NYC residents."
+                        <br>
+                        <a class="viewProject" href="">view project <i class="fas fa-chevron-right fa-xs"></i></a>
+                        (NOT ACTUALLY BUILT YET, see project 3 (Untitled) for example project page)
+                    </p>
 
-                    <div>
-                        <p class="ProjectDescription">ATMOS is a smart diffuser designed
-                            for small living spaces that helps <em>bring the outside in.</em><br>
-                            <a class="viewProject" href="">view project <i class="fas fa-chevron-right fa-xs"></i></a>
-                            (NOT ACTUALLY BUILT YET, see project 3 (Untitled) for example project page)
-                        </p>
-                    </div>
                 </div>
 
                 <div class="ProjectImageContainer">
-                    <img class='ProjectImage' src="assets\Atmos\Atmos Final Full Assembly.png" alt="">
+                    <img class='ProjectImage boardered_img' src="assets\uo\uo_screengrab.png" alt="Sceenshot of Urban Outreach's Website">
+                </div>
+
+                <ol class="quick_info">
+
+                    <li class="client">
+                        <ul>
+                            <li class='qi_label'>Client:</li>
+                            <li>
+                                <hr class="qi_underline">
+                            </li>
+                            <li class=clientSubBullet>
+                                Urban Outreach Center<br>
+                            </li>
+                            <li class=clientSubBullet>
+                                Pratt dxCenter <br>
+                            </li>
+                            <li class=clientSubBullet>
+                                The Pratt Institute<br>
+                                SI 644:
+                                Usability Theory&#160;&#38;&#160;Practice
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li class='qi_label'>Team Members:</li>
+                            <li>
+                                <hr class="qi_underline">
+                            </li>
+                            <li>
+                                <ul class='Team'>
+                                    <li class="TeamMembers">Monica Hersher</li>
+                                    <li class="TeamMembers">Hilary Wang</li>
+                                    <li class="TeamMembers">Xiujie Bi</li>
+                                    <li class="TeamMembers">Zhuolan Zhang</li>
+                                </ul>
+
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li class='qi_label'>Project Categories</li>
+                            <li>
+                                <hr class="qi_underline">
+                            </li>
+                            <li>
+                                <ul class="design_categorys">
+                                    <li>Moderated Usability Testing</li>
+                                    <li>UX Research</li>
+                                    <li>UX Design</li>
+                                    <li>Protyping</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                    </li>
+                </ol>
+            </div>
+            <!--Project 2-------------------------- -->
+            <div class="Project">
+                <!-- Destop: flex row; Mobile: flex column -->
+                <div class='projectIntro'>
+
+                    <h3 class='ProjectTitle'>ATMOS</h3> <!-- Destop: Order 1; Mobile Order 2 -->
+                    <p class="ProjectDescription">ATMOS is a smart diffuser designed
+                        for small living spaces that helps <em>bring the outside in.</em><br>
+                        <a class="viewProject" href="">view project <i class="fas fa-chevron-right fa-xs"></i></a>
+                        (NOT ACTUALLY BUILT YET, see project 3 (Untitled) for example project page)
+                    </p>
+
+                </div>
+
+                <div class="ProjectImageContainer">
+                    <img class='ProjectImage' src="assets\Atmos\Atmos Final Full Assembly.png" alt="Rendering of product: wooden semi-sphere zen garden diffuser">
                 </div>
 
                 <ol class="quick_info">
@@ -78,7 +166,9 @@
                     <li class="client">
                         <ul>
                             <li class='qi_label'>For:</li>
-                            <li><hr class="qi_underline"></li>
+                            <li>
+                                <hr class="qi_underline">
+                            </li>
                             <li class=clientSubBullet>
                                 University of Michigan <br>
                                 ARTDES 416 / TO 448: <br>
@@ -90,9 +180,11 @@
                     <li>
                         <ul>
                             <li class='qi_label'>Team Members:</li>
-                            <li><hr class="qi_underline"></li>
                             <li>
-                                <ul  class='Team'>
+                                <hr class="qi_underline">
+                            </li>
+                            <li>
+                                <ul class='Team'>
                                     <li class="TeamMembers">Sirisha Billa</li>
                                     <li class="TeamMembers">Katherine Forest</li>
                                     <li class="TeamMembers">Michael Rigney</li>
@@ -107,7 +199,9 @@
                     <li>
                         <ul>
                             <li class='qi_label'>Project Categories</li>
-                            <li><hr class="qi_underline"></li>
+                            <li>
+                                <hr class="qi_underline">
+                            </li>
                             <li>
                                 <ul class="design_categorys">
                                     <li>UX Design</li>
@@ -122,7 +216,7 @@
                     </li>
                 </ol>
             </div>
-            <!--Project 2 -------------------------- -->
+            <!--Project 3 -------------------------- -->
             <div class="Project" id="Powing">
                 <!-- Destop: flex row; Mobile: flex column -->
                 <div class='projectIntro'>
@@ -139,7 +233,7 @@
                 </div>
 
                 <div class="ProjectImageContainer">
-                    <img class='ProjectImage' src="assets\Powing\StakeholderMap.png" alt="">
+                    <img class='ProjectImage' src="assets\Powing\StakeholderMap.png" alt="Stakeholder map">
                 </div>
 
                 <ol class="quick_info">
@@ -147,7 +241,9 @@
                     <li class="client">
                         <ul>
                             <li class='qi_label'>For:</li>
-                            <li><hr class="qi_underline"></li>
+                            <li>
+                                <hr class="qi_underline">
+                            </li>
                             <li class=clientSubBullet>
                                 The Pratt Institute <br>
                                 DES-730A <br>
@@ -159,7 +255,9 @@
                     <li>
                         <ul>
                             <li class='qi_label'>Project Categories</li>
-                            <li><hr class="qi_underline"></li>
+                            <li>
+                                <hr class="qi_underline">
+                            </li>
                             <li>
                                 <ul class="design_categorys">
                                     <li>Business Analysis</li>
@@ -173,19 +271,15 @@
 
                 </ol>
             </div>
+
         </div>
-
         <div id="NavAid">
-            <a class='button' href="#mainBody">
-
-                <img src="assets/Icons/Asset 5.svg" alt="Back to top">
-                <p>Back to top</p>
-
+            <a href="#mainBody">
+                <img src="assets/Icons/Asset 5.svg" alt="">
             </a>
         </div>
 
     </main>
-
     <footer id=footer>
         <p>Designed and coded by Orville Mo-He.</p>
     </footer>

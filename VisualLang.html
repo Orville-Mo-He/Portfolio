@@ -9,44 +9,39 @@
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/vislangStyle.css">
-
     <script src="https://kit.fontawesome.com/8a8818c03d.js" crossorigin="anonymous"></script>
     <title>Orville Mo-He's Visual Exploration of Suicidal Ideation</title>
     <script src="js/scratch.js"></script>
 </head>
 
-<body class="container">
-    <!-- <div class="skip"><a href="#main">Skip to Main Content</a></div> -->
-    <!--
-        desktop: flex row
-        mobile: flex column
-    -->
+
+<body class="container" id="about">
+    <!-- <div class="skip"><a href="#mainBody">Skip to Main Content</a></div> -->
+
     <header>
+        <div class="MyInfo">
+            <a href="index.html" id="HeaderLogo"><img src="assets/Home/SVG/Mountainous Logo White.svg" alt="Logo"></a>
+            <h1>Orville Mo&#8209He Design</h1>
+            <a href="mailto:moheo@umich.edu">moheo@umich.edu</a>
+        </div>
         <nav id='nav'>
 
-            <a alt="home button" href="index.html" id="NavLogo"><img src="assets/Home/SVG/Mountainous Logo White.svg"
-                    alt="Logo"></a>
+            <a href="index.html" id="NavLogo"><img src="assets/Home/SVG/Mountainous Logo White.svg" alt="Logo"></a>
             <ul id="navlinks">
                 <li><a class="indvNavLink" href="index.html">Home</a></li>
                 <li><a id="currentPage" class="indvNavLink" href="design.html">Design</a></li>
                 <li><a class="indvNavLink" href="creative_work.html">Exploratory Work</a></li>
                 <li><a class="indvNavLink" href="writing.html">Writing Samples</a></li>
-                <!-- <li><a class="indvNavLink" href="about.html">About Me</a></li> -->
+                <li><a class="indvNavLink" href="about.html">About Me</a></li>
             </ul>
-            <a alt="home button" href="javascript:void(0)" id='BurgerMenu' onclick="myFunction()">
+            <a href="javascript:void(0)" id='BurgerMenu' onclick="myFunction()">
                 <!-- hamburger menu icon-->
                 <i class="fas fa-bars fa-2x" id="BurgerIcon"></i>
                 <i class="fas fa-times fa-2x" id="CloseMenuIcon"></i>
             </a>
-
-
         </nav>
-        <div class="MyInfo">
-            <img src="" alt="Logo" id="HeaderLogo">
-            <h1>Orville Mo-he Design</h1>
-            <a href="mailto:moheo@umich.edu">moheo@umich.edu</a>
-        </div>
     </header>
+
     <main id="mainBody">
 
         <div class="Projectintro">
@@ -58,6 +53,8 @@
                 exploring the gravity, melancholia, darkness, and beauty of
                 and within those suffering from suicidal ideation.
             </P>
+            <br>
+            <a class="back_to" href="creative_work.html">&larr; Exploratory Work</a>
         </div>
         <div class="main_content">
             <div class='set1'>
@@ -238,18 +235,17 @@
             </div>
         </div>
 
+
+
         <div id="NavAid">
-            <a class='button' href="#mainBody">
-    
-                <img src="assets/Icons/Asset 7.svg" alt="Back to top">
-                <p>Back to top</p>
-    
+            <a href="#mainBody">
+                <img src="assets/Icons/Asset 5.svg" alt="">
             </a>
         </div>
     </main>
 
-
     <footer id=footer>
         <p>Designed and coded by Orville Mo-He.</p>
     </footer>
+
 </body>
