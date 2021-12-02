@@ -762,51 +762,7 @@ About me Page should be built at this point.
     .ProjectTitle,
     .PaperTitle {
         grid-row: 1;
-        grid-column: 1;
-        padding-bottom: 0;
     }
-    .ProjectDescription {
-        grid-column: 1 / span 1;
-        grid-row: 2;
-        padding-bottom: 0;
-
-    }
-
-    .ProjectImageContainer {
-        padding: 0 .33rem;
-        grid-column: 2;
-        grid-row: 2 / span 3;
-        align-self: start;
-    }
-
-    #Powing .ProjectImage{
-        margin-bottom: 0;
-    }
-    .ProjectImage {
-
-        display: inline;
-        margin: 0;
-        max-width: 100%;
-
-    }
-    .Project #AtmosImg{
-        margin-top: -.75rem;
-        /* Optical alignment */
-    }
-    #untitledimg{
-        align-self: start;
-        margin-top: .33rem;
-    }
-
-    #untitledimg>img {
-        margin: auto;
-        padding: 1rem;
-        max-width: 80%;
-        display: block;
-
-    }
-
-    .quick_info,
     #Powing.quick_info {
         /* grid-column: 1 / span 1; */
         grid-row: 3;
@@ -855,11 +811,17 @@ About me Page should be built at this point.
         background-color: transparent;
     }
 
-    #ContactForm form {
+    .MyInfo * {
+        color: white;
+    }
+
+    #ContactForm form{
+
         grid-template-rows: 1fr 1fr 3fr 3fr 1fr;
         grid-template-columns: 1fr 1fr;
         column-gap: 1.33rem;
         row-gap: 1.7rem;
+
     }
 
     input.entry {
@@ -941,6 +903,7 @@ About me Page should be built at this point.
         flex-direction: column;
         align-items: flex-start;
         /* justify-content: center; */
+
 
     }
 
@@ -1027,6 +990,83 @@ About me Page should be built at this point.
         grid-column: 2/ span 1;
         display: grid;
         grid-template-columns: 1fr;
+    }
+    footer{
+        grid-row: -1;
+        grid-column: 2;
+    }
+
+
+
+
+    #untitledimg {
+        align-self: start;
+        width: auto;
+        height: 100%;
+    }
+
+    #untitledimg>img {
+        margin: 0;
+        margin: auto;
+        padding: 0;
+        max-width: 100%;
+
+    }
+    .quick_info, #Powing .quick_info{
+        margin-top: -.666rem;
+        flex-wrap: wrap;
+        column-gap: 3rem;
+
+    }
+    /* .Team > ul > li:first-child{
+        margin-bottom: .333rem;
+    } */
+    .clientSubBullet, .TeamMembers{
+        padding-left: 0;
+    }
+    .design_categorys, .PaperCategory{
+        padding-top: 0;
+    }
+
+
+
+
+
+
+
+    #currentPage {
+        font-size: 1.333rem;
+        color: white;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+    }
+
+    .indvNavLink:hover,
+    #currentPage:hover {
+        text-decoration: underline;
+        color: white;
+        text-decoration-thickness: 3px;
+        font-size: 1.6777rem;
+    }
+
+    #NavLogo {
+        display: none;
+    }
+
+    #mainBody {
+        padding-left: 0;
+        width: auto;
+        grid-column: 2/ span 1;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    footer{
+        grid-row: -1;
+        grid-column: 2;
+    }
+    footer{
+        grid-row: -1;
+        grid-column: 2;
     }
     footer{
         grid-row: -1;
