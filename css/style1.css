@@ -1,4 +1,4 @@
-
+:root,
 html {
     height: 100%;
     height: -webkit-fill-available;
@@ -627,14 +627,17 @@ that is laid out already.
     SO:
         Navlinks should be displayed
             navLinks should be row no wrap space between
+
         both icons need to be hidden
         the myInfo section needs to be hidden
         The nav logo needs to be shown
+
 Next is the issue of each project needing to be remade:
     Title and description need to be in one row
     Second row needs to be image and quick info
         This probably needs to be flex (or not)
         photo on left, quickInfo on right.
+
 About me Page should be built at this point.
 */
 
@@ -759,51 +762,7 @@ About me Page should be built at this point.
     .ProjectTitle,
     .PaperTitle {
         grid-row: 1;
-        grid-column: 1;
-        padding-bottom: 0;
     }
-    .ProjectDescription {
-        grid-column: 1 / span 1;
-        grid-row: 2;
-        padding-bottom: 0;
-
-    }
-
-    .ProjectImageContainer {
-        padding: 0 .33rem;
-        grid-column: 2;
-        grid-row: 2 / span 3;
-        align-self: start;
-    }
-
-    #Powing .ProjectImage{
-        margin-bottom: 0;
-    }
-    .ProjectImage {
-
-        display: inline;
-        margin: 0;
-        max-width: 100%;
-
-    }
-    .Project #AtmosImg{
-        margin-top: -.75rem;
-        /* Optical alignment */
-    }
-    #untitledimg{
-        align-self: start;
-        margin-top: .33rem;
-    }
-
-    #untitledimg>img {
-        margin: auto;
-        padding: 1rem;
-        max-width: 80%;
-        display: block;
-
-    }
-
-    .quick_info,
     #Powing.quick_info {
         /* grid-column: 1 / span 1; */
         grid-row: 3;
@@ -852,11 +811,17 @@ About me Page should be built at this point.
         background-color: transparent;
     }
 
-    #ContactForm form {
+    .MyInfo * {
+        color: white;
+    }
+
+    #ContactForm form{
+
         grid-template-rows: 1fr 1fr 3fr 3fr 1fr;
         grid-template-columns: 1fr 1fr;
         column-gap: 1.33rem;
         row-gap: 1.7rem;
+
     }
 
     input.entry {
@@ -928,105 +893,4 @@ About me Page should be built at this point.
 
     }
 
-    .MyInfo {
-        justify-self: flex-start;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        margin-top: 2.369rem;
-        /* width: 80%; */
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        /* justify-content: center; */
-
-    }
-
-    .MyInfo * {
-        color: white;
-    }
-
-
-
-    .MyInfo>h1 {
-        font-size: 1.777rem;
-        margin-top: 1.317rem;
-        margin-bottom: .317rem;
-        width: auto;
-
-    }
-    #HeaderLogo{
-        width: 60%;
-    }
-    #HeaderLogo>img {
-        width: 100%;
-    }
-
-    #nav {
-        justify-self: center;
-        padding-left: 1rem;
-        height: auto;
-        margin-top: 8.3333vh;
-        flex-basis: auto;
-        display: flex;
-        flex-flow: column nowrap;
-        text-decoration: none;
-    }
-
-    #navlinks {
-
-        min-height: auto;
-        /* flex-basis: 100%; */
-        justify-self: center;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: flex-start;
-        row-gap: 1rem;
-        /* background-color: darkgray; */
-        padding: 0;
-
-
-    }
-
-    .indvNavLink {
-        color: #eee4de;
-        width: auto;
-        font-size: 1rem;
-
-    }
-
-    #currentPage::after {
-        color: rgba(29, 29, 29, 0);
-        content: none;
-    }
-
-    #currentPage {
-        font-size: 1.333rem;
-        color: white;
-        text-decoration: underline;
-        text-decoration-thickness: 3px;
-    }
-
-    .indvNavLink:hover,
-    #currentPage:hover {
-        text-decoration: underline;
-        color: white;
-        text-decoration-thickness: 3px;
-        font-size: 1.6777rem;
-    }
-
-    #NavLogo {
-        display: none;
-    }
-
-    #mainBody {
-        padding-left: 0;
-        width: auto;
-        grid-column: 2/ span 1;
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    footer{
-        grid-row: -1;
-        grid-column: 2;
-    }
 }
