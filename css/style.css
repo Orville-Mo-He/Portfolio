@@ -1,5 +1,5 @@
-
-:root, html{
+:root,
+html {
     height: 100%;
     height: -webkit-fill-available;
     font-size: 18px;
@@ -8,14 +8,22 @@
 
 }
 
-h1, h2, h3, nav>ul>li>a, input, textarea, label{
+h1,
+h2,
+h3,
+nav>ul>li>a,
+input,
+textarea,
+label {
     color: #6B5B57;
     font-family: adobe-garamond-pro, serif;
     font-weight: 400;
 }
-.displayNone{
+
+.displayNone {
     display: none;
 }
+
 a {
     color: #752C49;
 }
@@ -31,36 +39,49 @@ h2 {
 h3 {
     font-size: 1.366rem;
 }
-.in_line_h{
+
+.in_line_h {
     font-weight: 700;
     font-size: 1rem;
 }
-.caption{
+
+.caption {
     /* font-style: italic; */
     letter-spacing: .5px;
     font-size: .75rem;
     line-height: 1rem;
 
 }
-p, li, ol, ul {
+
+p,
+li,
+ol,
+ul {
     font-size: 1rem;
     font-family: adobe-garamond-pro, serif;
     color: #6B5B57;
     font-weight: 400;
 }
-p{
+
+p {
     max-width: 90ch;
+    line-height: 1.2rem;
+}
+
+.nb_disclaimer {
+    font-size: .75rem;
 }
 
 
-div{
+div {
     background-color: white;
 }
+
 .container {
     height: 100%;
 }
 
-a.skip{
+a.skip {
     background: white;
     left: 0;
     padding: 6px;
@@ -69,13 +90,13 @@ a.skip{
     -webkit-transition: top 1s ease-out;
     transition: top 1s ease-out;
     z-index: 1;
-  }
+}
 
-  a.skip:focus{
-    top:20px;
+a.skip:focus {
+    top: 20px;
     color: black;
     text-decoration-style: solid;
-  }
+}
 
 
 #footer {
@@ -102,7 +123,7 @@ header {
     width: 100%;
     display: flex;
     flex-direction: row;
-    height:auto;
+    height: auto;
 }
 
 .MyInfo {
@@ -184,30 +205,33 @@ nav>ul>li>a:active {
 }
 
 
-main#mainBody.thepaper{
+main#mainBody.thepaper {
     display: block;
 }
 
 
-main#mainBody.thepaper ol *{
+main#mainBody.thepaper ol * {
     list-style-type: decimal;
     margin: 0 1.333rem;
     max-width: 100%;
     word-break: break-all;
     padding-left: .333rem;
 }
-main#mainBody.thepaper ul *{
+
+main#mainBody.thepaper ul * {
     list-style-type: circle;
     margin: 0 1.333rem;
     max-width: 100%;
     padding-left: .333rem;
     word-break: break-all;
 }
-main#mainBody.thepaper ol, main#mainBody.thepaper ul{
+
+main#mainBody.thepaper ol,
+main#mainBody.thepaper ul {
     margin-bottom: 1rem;
 }
 
-.nested{
+.nested {
     margin-top: 1rem !important;
 }
 
@@ -218,7 +242,7 @@ main#mainBody.thepaper ol, main#mainBody.thepaper ul{
 } */
 
 .PageIntro {
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
 }
 
 
@@ -251,13 +275,14 @@ main#mainBody.thepaper ol, main#mainBody.thepaper ul{
     line-height: 2.2rem;
 
 }
-#home #mainBody .PageIntro .Home_intro_p{
+
+#home #mainBody .PageIntro .Home_intro_p {
     margin-left: 2rem;
 
 }
 
 .Project_Highlights {
-    margin-top: 10vh;
+    margin-top: 3rem;
     display: flex;
     flex-flow: column nowrap;
     flex-basis: 100%;
@@ -273,7 +298,8 @@ main#mainBody.thepaper ol, main#mainBody.thepaper ul{
     margin-bottom: -.4rem;
 }
 
-.PapersSection>h2, .SectionHeader> h2 {
+.PapersSection>h2,
+.SectionHeader>h2 {
     margin-bottom: -.39rem;
 }
 
@@ -297,36 +323,38 @@ li {
     flex-flow: column nowrap;
     margin: 6vh 0;
 }
-#adobe-dc-view{
+
+#adobe-dc-view {
     width: 100%;
 }
 
 .Project_Highlights:nth-child(2) {
     margin-top: 5vh;
 }
-.ArticleTitle{
+
+.ArticleTitle {
     font-size: 1.333rem;
     padding: 1rem 0;
 }
-#mainBody.thepaper .back_to{
+
+#mainBody.thepaper .back_to {
     margin-top: 2rem;
 }
-.ArticleH1{
+
+.ArticleH1 {
     font-weight: 700;
     font-size: 1rem;
     padding: 1rem 0;
 
 }
-.ArticleH2{
+
+.ArticleH2 {
     font-weight: 700;
     font-style: italic;
     font-size: 1rem;
     padding: 1rem 0;
 }
-.projectIntro {
-    display: flex;
-    align-items: baseline;
-}
+
 
 .ProjectTitle,
 .PaperTitle {
@@ -335,17 +363,19 @@ li {
     padding-right: 1.777rem;
 }
 
-blockquote{
+blockquote {
     margin-left: 1rem;
     margin-bottom: 1rem;
 }
-.thepaper p{
+
+.thepaper p {
     padding-bottom: 1rem;
 }
 
 
 .ProjectDescription {
     padding-bottom: 1.66rem;
+    padding-left: 1px;    /* optical alignment */
     /* flex-shrink: 0; */
 }
 
@@ -375,7 +405,7 @@ blockquote{
     -webkit-box-shadow: inset 0 0 20px #000000;
     box-shadow: inset 0 0 20px #000000;
     align-self: center;
-    width: 100vw;
+    /* width: 100vw; */
 }
 
 #untitledimg>img {
@@ -389,27 +419,32 @@ blockquote{
 .quick_info {
     display: flex;
     flex-direction: column;
-    margin-top: .66rem;
-    margin-left: .33rem;
+    margin-top: 1.77rem;
+    margin-left: .1rem;
 }
+
 /* .quick_info> li{
     margin: .66rem
 } */
-.qi_label{
-    padding-top: 1.333rem;
+.qi_label {
     margin-bottom: -.16rem;
 }
-.qi_underline{
+
+.qi_underline {
     border-top: solid 1px #6B5B5780;
     margin: 0;
 }
-.clientSubBullet, .Team, .design_categorys{
+
+.clientSubBullet,
+.Team,
+.design_categorys {
     margin-top: .66rem;
     line-height: 1.33rem;
 
     /* padding-bottom: .6rem; */
 }
-.boardered_img{
+
+.boardered_img {
     border: solid 1px #6B5B5780;
 }
 
@@ -446,14 +481,15 @@ blockquote{
 
     background-color: transparent;
     position: fixed;
-    bottom: 50px;
-    left: 5vw;
+    bottom: 5vh;
+    right: 1vw;
     display: none;
-    flex-flow: column wrap;
+
 }
 
 #NavAid img {
-    width: 50px;
+    width: 10vw;
+    max-width: 50px;
 }
 
 
@@ -462,11 +498,11 @@ blockquote{
 }
 
 
-#about #mainBody{
+#about #mainBody {
     margin-top: 0;
 }
 
-#about .PageIntro{
+#about .PageIntro {
     padding: 25vh 0 10% 0;
     width: 100%;
     align-self: center;
@@ -482,16 +518,17 @@ blockquote{
     height: 100%;
 
 }
-#aip{
-    margin: 50vw auto 0 ;
+
+#aip {
+    margin: 50vw auto 0;
 
     width: fit-content;
 }
 
 
 
-#about .PageIntro p{
-    padding:0;
+#about .PageIntro p {
+    padding: 0;
     margin: 0;
     line-height: 1rem;
 }
@@ -501,58 +538,70 @@ blockquote{
     height: 50%;
 } */
 
-#about .PageIntro #aip_l_1{
+#about .PageIntro #aip_l_1 {
     padding-left: 1rem;
 }
-#about .PageIntro #aip_l_2{
+
+#about .PageIntro #aip_l_2 {
     padding-left: 2rem;
 }
-#about .PageIntro #aip_l_3{
+
+#about .PageIntro #aip_l_3 {
     /* just here for clarity */
     padding-left: 0
 }
-#about .PageIntro #aip_l_4{
+
+#about .PageIntro #aip_l_4 {
     padding-left: 1rem;
 }
-#about .PageIntro #aip_l_5{
+
+#about .PageIntro #aip_l_5 {
     font-weight: 700;
     padding-left: 2.4rem;
 }
-.no_tm_hr{
+
+.no_tm_hr {
     margin-top: 0;
 }
 
-.no_bm_hr{
+.no_bm_hr {
     margin-bottom: 0;
 }
-#ContactForm{
+
+#ContactForm {
     display: grid;
     grid-template-rows: repeat(2, auto);
     row-gap: 1rem;
 }
-#ContactForm form{
+
+#ContactForm form {
     display: grid;
     row-gap: .33rem;
     grid-template-rows: repeat(9, auto);
 }
-input, textarea{
+
+input,
+textarea {
     justify-self: stretch;
     margin-bottom: 1rem;
 }
-label.label_supp{
+
+label.label_supp {
     font-size: .75rem;
 }
-#fsubmit{
+
+#fsubmit {
     background-color: white;
     border-radius: 2px;
-    color:#B8AAA0;
+    color: #B8AAA0;
     border: solid 1px #B8AAA0;
 }
-#fsubmit:hover{
+
+#fsubmit:hover {
 
 
-    border-color:#6B5B57;
-    background-color:#6B5B57;
+    border-color: #6B5B57;
+    background-color: #6B5B57;
     color: white;
     border-radius: 3px;
     /*
@@ -560,10 +609,12 @@ label.label_supp{
     sharper.
     */
 }
-#about #mainBody{
+
+#about #mainBody {
     row-gap: 0;
 }
-#monologue{
+
+#monologue {
     display: flex;
     flex-direction: column;
     row-gap: 1.33rem;
@@ -590,12 +641,11 @@ Next is the issue of each project needing to be remade:
 About me Page should be built at this point.
 */
 
-@media screen and (min-width:850px) {
+@media screen and (min-width:800px) {
 
     .container {
         display: grid;
-        /* column-gap: 1rem; */
-        grid-template-rows: 3rem auto;
+        grid-template-rows: 3rem auto auto;
         justify-items: center;
         align-items: center;
         justify-content: stretch;
@@ -643,9 +693,11 @@ About me Page should be built at this point.
         align-items: baseline;
         row-gap: 1rem;
     }
-    #navlinks > li{
+
+    #navlinks>li {
         width: fit-content;
     }
+
     #nav #navlinks .indvNavLink {
         color: #eee4de;
         font-size: 1rem;
@@ -671,15 +723,16 @@ About me Page should be built at this point.
         font-size: 1.333rem;
     }
 
-    #NavLogo{
+    #NavLogo {
         grid-column: 1;
     }
-    #NavLogo img{
+
+    #NavLogo img {
         height: 2.34rem;
     }
 
     #mainBody {
-        padding: 0 1rem;
+        padding: 0 2.37rem;
         width: auto;
         grid-row: 2/ span 1;
         display: grid;
@@ -699,32 +752,50 @@ About me Page should be built at this point.
     .PapersList {
         grid-column: 1 / span 1;
         display: grid;
-        grid-template-columns: 2fr 1.5fr 1.5fr;
-        column-gap: 2rem;
+        grid-template-columns: 2fr 3fr;
+        grid-auto-rows: min-content min-content min-content min-content;
+        row-gap: 1.77rem;
+        column-gap: 3rem;
+
     }
 
-    .projectIntro{
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        column-gap: 2rem
+    .ProjectTitle,
+    .PaperTitle {
+        grid-row: 1;
+        grid-column: 1;
+        padding-bottom: 0;
     }
+    .ProjectDescription {
+        grid-column: 1 / span 1;
+        grid-row: 2;
+        padding-bottom: 0;
+
+    }
+
     .ProjectImageContainer {
-        grid-column: 2 / span 1;
-        align-self: baseline;
-
+        padding: 0 .33rem;
+        grid-column: 2;
+        grid-row: 2 / span 3;
+        align-self: start;
     }
 
+    #Powing .ProjectImage{
+        margin-bottom: 0;
+    }
     .ProjectImage {
 
         display: inline;
         margin: 0;
-        /* padding-left: 10vw; */
-        /* flex-basis: 100%; */
         max-width: 100%;
-    }
 
-    #untitledimg {
-        width: auto;
+    }
+    .Project #AtmosImg{
+        margin-top: -.75rem;
+        /* Optical alignment */
+    }
+    #untitledimg{
+        align-self: start;
+        margin-top: .33rem;
     }
 
     #untitledimg>img {
@@ -734,22 +805,32 @@ About me Page should be built at this point.
         display: block;
 
     }
-    .quick_info, #Powing .quick_info{
-        margin-top: -.666rem;
-        flex-wrap: wrap;
-        column-gap: 3rem;
 
+    .quick_info,
+    #Powing.quick_info {
+        /* grid-column: 1 / span 1; */
+        grid-row: 3;
+
+        /* flex-flow: row wrap; */
+        row-gap: 1.66rem;
+        column-gap: 3rem;
+        /* margin-top: 0; */
     }
-    .qi_underline{
-        max-width: 80%;
+
+    .qi_underline {
+        flex-basis: 40%;
     }
+
     /* .Team > ul > li:first-child{
         margin-bottom: .333rem;
     } */
-    .clientSubBullet, .TeamMembers{
+    .clientSubBullet,
+    .TeamMembers {
         padding-left: 0;
     }
-    .design_categorys, .PaperCategory{
+
+    .design_categorys,
+    .PaperCategory {
         padding-top: 0;
     }
 
@@ -758,57 +839,197 @@ About me Page should be built at this point.
     Note that because I haven't changed up the display settings
     for the about section, this is broken.
     */
-    #about .PageIntro{
+    #about .PageIntro {
         background-attachment: fixed;
         /* background: none; */
         padding-top: 30vh;
         background-size: 20%;
-        margin:0;
+        margin: 0;
         width: 100%;
         height: fit-content;
 
     }
-    #aip{
+
+    #aip {
         margin-top: 20vw;
         background-color: transparent;
     }
 
-    #ContactForm form{
+    #ContactForm form {
         grid-template-rows: 1fr 1fr 3fr 3fr 1fr;
         grid-template-columns: 1fr 1fr;
         column-gap: 1.33rem;
         row-gap: 1.7rem;
     }
-    input.entry{
+
+    input.entry {
         height: 1.33rem;
     }
-    input, textarea{
+
+    input,
+    textarea {
         grid-column: 1;
         margin-bottom: 0;
     }
-    form div, label.label_title.form{
+
+    form div,
+    label.label_title.form {
         grid-column: 2;
     }
-    #fname{
-        grid-row : 1;
-    }
-    .pronoun, #pronouns{
-        grid-row : 2;
-    }
-    .interest, #interest{
-        grid-row : 3;
+
+    #fname {
+        grid-row: 1;
     }
 
-    .fmsg, #fmsg{
-        grid-row : 4;
-    }
-    #submit{
-        grid-row : 5;
+    .pronoun,
+    #pronouns {
+        grid-row: 2;
     }
 
+    .interest,
+    #interest {
+        grid-row: 3;
+    }
+
+    .fmsg,
+    #fmsg {
+        grid-row: 4;
+    }
+
+    #submit {
+        grid-row: 5;
+    }
+
+
+}
+
+@media screen and (min-width:1025px){
+
+    .container {
+
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 8fr;
+        column-gap: 1rem;
+    }
+
+    #BurgerIcon {
+        display: none;
+    }
+
+    #CloseMenuIcon {
+        display: none;
+    }
+
+    header {
+        width: 100%;
+        grid-column: 1 / span 1;
+        max-height: 100vh;
+        flex-direction: column;
+        position: fixed;
+        align-items: flex-start;
+
+    }
+
+    .MyInfo {
+        justify-self: flex-start;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-top: 2.369rem;
+        /* width: 80%; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* justify-content: center; */
+
+    }
+
+    .MyInfo * {
+        color: white;
+    }
 
 
 
+    .MyInfo>h1 {
+        font-size: 1.777rem;
+        margin-top: 1.317rem;
+        margin-bottom: .317rem;
+        width: auto;
+
+    }
+    #HeaderLogo{
+        width: 60%;
+    }
+    #HeaderLogo>img {
+        width: 100%;
+    }
+
+    #nav {
+        justify-self: center;
+        padding-left: 1rem;
+        height: auto;
+        margin-top: 8.3333vh;
+        flex-basis: auto;
+        display: flex;
+        flex-flow: column nowrap;
+        text-decoration: none;
+    }
+
+    #navlinks {
+
+        min-height: auto;
+        /* flex-basis: 100%; */
+        justify-self: center;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        row-gap: 1rem;
+        /* background-color: darkgray; */
+        padding: 0;
 
 
+    }
+
+    .indvNavLink {
+        color: #eee4de;
+        width: auto;
+        font-size: 1rem;
+
+    }
+
+    #currentPage::after {
+        color: rgba(29, 29, 29, 0);
+        content: none;
+    }
+
+    #currentPage {
+        font-size: 1.333rem;
+        color: white;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+    }
+
+    .indvNavLink:hover,
+    #currentPage:hover {
+        text-decoration: underline;
+        color: white;
+        text-decoration-thickness: 3px;
+        font-size: 1.6777rem;
+    }
+
+    #NavLogo {
+        display: none;
+    }
+
+    #mainBody {
+        padding-left: 0;
+        width: auto;
+        grid-column: 2/ span 1;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    footer{
+        grid-row: -1;
+        grid-column: 2;
+    }
 }
