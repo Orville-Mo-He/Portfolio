@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://use.typekit.net/ebp8gbo.css">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
     <script src="https://kit.fontawesome.com/8a8818c03d.js" crossorigin="anonymous"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -32,6 +31,11 @@
     <a class="skip" href='#mainBody'>Skip to Main Content</a>
 
     <header>
+        <div class="MyInfo">
+            <a href="index.html" id="HeaderLogo"><img src="assets/Home/SVG/Mountainous Logo White.svg" alt="Logo"></a>
+            <h1>Orville Mo-He's Writings</h1>
+            <a href="mailto:moheo@umich.edu">moheo@umich.edu</a>
+        </div>
         <nav id='nav'>
 
             <a href="index.html" id="NavLogo"><img src="assets/Home/SVG/Mountainous Logo White.svg" alt="Logo"></a>
@@ -50,11 +54,6 @@
 
 
         </nav>
-        <div class="MyInfo">
-            <img src="" alt="Logo" id="HeaderLogo">
-            <h1>Orville Mo-he Design</h1>
-            <a href="mailto:moheo@umich.edu">moheo@umich.edu</a>
-        </div>
     </header>
 
     <main id="mainBody">
@@ -63,62 +62,67 @@
         <div class="PageIntro">
             <h1 id="PageTitle">writing &#38;/</h1>
             <h1 id="introOffset" class="introText">thinking</h1>
-            </p>
+            <!-- <p>"to make, shape," ultimately from Latin <em>designare</em> "mark out, point out; devise; choose,
+                designate, appoint," from de "out" + <em>signare</em> "to mark," from signum "identifying mark,
+                sign".<br><br>
+
+                The Italian verb disegnare in 16c. developed the senses "to contrive, plot, intend," and "to draw,
+                paint, embroider, etc." French took both these senses from Italian, in different forms, and passed them
+                on to English, which uses design in all senses.
+            </p> -->
         </div>
-        <div class="Project_Highlights">
-            <!--
-                desktop: flex column
-                mobile: column
-             -->
-            <div class="SectionHeader PapersSection">
+
+
+        <div class="PapersList">
+            <div class="SectionHeader">
                 <h2>papers: </h2>
+                <hr class="section_divider">
             </div>
 
-            <div class="PapersList">
+            <div class="Paper">
 
-                <div class="Paper">
+                <a class="readPaper" href="writing_501_BG_report.html">
+                    <h3 class="PaperTitle">Designing for the Bits
+                        &#38; Bytes of Online Courses</h3>
+                </a>
 
-                    <a class="readPaper" href="writing_501_BG_report.html">
-                        <h3 class="PaperTitle">Designing for the Bits
-                            &#38; Bytes of Online Courses</h3>
-                    </a>
-
-                    <ul class="Paper_Type_and_Topic">
-                        <li>
-                            <ul class="PaperCategory">Category:
-                                <li class="Paperli">background research report</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul class="PaperTopicList">Topics:
-                                <li class=" Paperli">Pedagogical Design</li>
-                                <li class=" Paperli">Online Course Design</li>
-                            </ul>
-                        </li>
-                        <!-- <li> abstract
-                        </li> -->
+                <div class="PaperCategory">
+                    <h4 class="qi_label">Category:</h4>
+                    <hr class="qi_underline">
+                    <ul>
+                        <li class="Paperli">background research report</li>
                     </ul>
-
-                    <a href="writing_501_BG_report.html">
-                        read paper <i class="fas fa-chevron-right fa-xs"></i>
-                    </a>
-
                 </div>
 
+                <div class="PaperTopicList">
+                    <h4 class="qi_label">Topics:</h4>
+                    <hr class="qi_underline">
+                    <ul>
+                        <li class=" Paperli">Pedagogical Design</li>
+                        <li class=" Paperli">Online Course Design</li>
+                    </ul>
+                </div>
+
+                <!-- <li> abstract
+                        </li> -->
+
+
+                <a href="writing_501_BG_report.html">
+                    read paper <i class="fas fa-chevron-right fa-xs"></i>
+                </a>
+
             </div>
 
-            <hr>
-
         </div>
+        <div id="NavAid">
+            <a href="#mainBody">
+                <img src="assets/Icons/Asset 5.svg" alt="">
+            </a>
+        </div>
+
     </main>
-    <div id="NavAid">
-        <a class='button' href="#mainBody">
 
-            <img src="assets/Icons/Asset 5.svg" alt="Back to top">
-            <p>Back to top</p>
 
-        </a>
-    </div>
     <footer id=footer>
         <p>Designed and coded by Orville Mo-He.</p>
     </footer>

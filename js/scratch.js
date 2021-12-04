@@ -37,11 +37,11 @@ window.onresize = windowResized;
 
 function windowResized(){
 
-    if (window.innerWidth > 850){
+    if (window.innerWidth > 800){
         // console.log('Hi')
         navlinks.style.display = "flex";
     }
-    else if (window.innerWidth < 900){
+    else if (window.innerWidth < 800){
         navlinks.style.display = "none";
     }
 }
