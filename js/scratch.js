@@ -35,43 +35,52 @@ function myFunction() {
 //relevant for tablets.
 window.onresize = windowResized;
 
-function windowResized(){
+function windowResized() {
 
-    if (window.innerWidth > 800){
+    if (window.innerWidth > 800) {
         // console.log('Hi')
         navlinks.style.display = "flex";
-    }
-    else if (window.innerWidth < 800){
+    } else if (window.innerWidth < 800) {
         navlinks.style.display = "none";
     }
 }
 
 
-document.addEventListener("adobe_dc_view_sdk.ready", function(){
-    var adobeDCView = new AdobeDC.View({clientId: "a6fbbfe327884c68b99c32062e40e1eb", divId: "adobe-dc-view"});
+document.addEventListener("adobe_dc_view_sdk.ready", function () {
+    var adobeDCView = new AdobeDC.View({
+        clientId: "a6fbbfe327884c68b99c32062e40e1eb",
+        divId: "adobe-dc-view"
+    });
     adobeDCView.previewFile({
-        content:{location: {url: "https://orville-mo-he.github.io/MobileView/assets/Writing/BGReport.pdf"}},
-        metaData:{fileName: "Bodea Brochure.pdf"}
+        content: {
+            location: {
+                url: "https://orville-mo-he.github.io/MobileView/assets/Writing/BGReport.pdf"
+            }
+        },
+        metaData: {
+            fileName: "Bodea Brochure.pdf"
+        }
     }, {});
 });
 
 
 
-
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+    scrollFunction()
+};
 // let last_position = 0
 function scrollFunction() {
 
     var h = window.innerHeight
     var top = document.getElementById("NavAid")
 
-  //if (document.body.scrollTop > h/3 || document.documentElement.scrollTop > h/3 && (window.pageYOffset < last_position)) {
-    if (document.body.scrollTop > h/3 || document.documentElement.scrollTop > h/3) {
+    //if (document.body.scrollTop > h/3 || document.documentElement.scrollTop > h/3 && (window.pageYOffset < last_position)) {
+    if (document.body.scrollTop > h / 3 || document.documentElement.scrollTop > h / 3) {
 
         top.style.display = "block";
 
     } else {
-      top.style.display = "none";
+        top.style.display = "none";
     }
     // last_position = window.pageYOffset
 }
@@ -83,19 +92,19 @@ function scrollFunction() {
 var isScrolling;
 
 // Listen for scroll events
-window.addEventListener('scroll', function ( event ) {
+window.addEventListener('scroll', function (event) {
 
     var top = document.getElementById("NavAid")
-	// Clear our timeout throughout the scroll
-	window.clearTimeout( isScrolling );
+    // Clear our timeout throughout the scroll
+    window.clearTimeout(isScrolling);
 
-	// Set a timeout to run after scrolling ends
-	isScrolling = setTimeout(function() {
+    // Set a timeout to run after scrolling ends
+    isScrolling = setTimeout(function () {
 
-		// Run the callback
+        // Run the callback
         top.style.display = "none";
-		// console.log( 'Scrolling has stopped.' );
+        // console.log( 'Scrolling has stopped.' );
 
-	}, 1500);
+    }, 1500);
 
 }, false);

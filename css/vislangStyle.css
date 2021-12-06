@@ -1,7 +1,7 @@
-
 div:not(.MyInfo),
 html,
-footer, header {
+footer,
+header {
     animation-name: Fade;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -15,6 +15,7 @@ footer {
 nav {
     animation: navshadow 2s forwards;
 }
+
 #NavAid {
     animation-name: NavFire;
     animation-duration: 2s;
@@ -22,20 +23,26 @@ nav {
 }
 
 @media (prefers-reduced-motion) {
-    .MyInfo, div, html, footer, nav, header{
+
+    .MyInfo,
+    div,
+    html,
+    footer,
+    nav,
+    header {
         animation-name: Nah;
         background-color: black;
     }
 
-    footer{
+    footer {
         border-top: 1px solid #aaaaaa48;
     }
 
-    nav{
+    nav {
         box-shadow: 0 0 2rem 3px rgba(0, 0, 0, 0.486);
     }
 
-    #NavAid{
+    #NavAid {
         animation-name: Nah;
         background-color: transparent;
     }
@@ -68,7 +75,7 @@ nav {
 }
 
 
-#mainBody{
+#mainBody {
     row-gap: 7rem;
 }
 
@@ -110,7 +117,7 @@ ul {
     width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
-    row-gap: 6rem;
+    row-gap: 8rem;
 }
 
 .set1 {
@@ -150,15 +157,16 @@ ul {
     row-gap: 1.333rem;
 }
 
-.set1 img{
+.set1 img {
     width: 100%;
 }
 
 .set2 {
     grid-row: 2;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     row-gap: 3.157rem;
+    column-gap: 5%;
     /* margin-top: 10vh; */
 }
 
@@ -166,38 +174,132 @@ ul {
     width: 100%;
 }
 
+.set2 h2 {
+    grid-row: 1;
+    grid-column: 1/-1;
+}
+
+.set2 .two {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.set2 .three,
+.set2 .four {
+    grid-row: 3;
+}
+
+.set2 .xLong {
+    grid-column: 2;
+    grid-row: 6/ span 2;
+}
+
+.set2 .special {
+    grid-column: 1/-1;
+    grid-row-end: span 2;
+}
+
+.set2 .Horizontal {
+    grid-column: 1/ span 2;
+    grid-row: 4;
+}
+
+.set2 .square {
+    grid-column: 1/ span 2;
+    grid-row: 5;
+}
+
+
+
 .setnum {
     padding-bottom: 2vh;
 }
-.set2 h2, .Set3 h2{
+
+.set2 h2,
+.Set3 h2 {
     margin-bottom: -3.157rem;
 }
+
 .Set3 {
     grid-row: 3 / span 1;
     display: flex;
     flex-direction: column;
-    row-gap: 3.157rem;
+    row-gap: 5rem;
+    margin-bottom: 30vh;
 
 }
 
 .set3partition {
     width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    row-gap: 1.333rem;
-    column-gap: 4%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    column-gap: 5%;
+    row-gap: 2rem;
 
 }
 
 .set3partition * {
-    width: 48%;
+    width: 100%;
     height: auto;
-
 }
 
-.Set3>.set3partition>.Horizontal {
-    width:100%;
+
+
+
+.Set3 .un .fourth {
+    grid-row: 3;
+    grid-column: 2;
 }
+
+.Set3 .un .square {
+    grid-row: 1;
+    grid-column: 1 / -1;
+}
+
+.Set3 .du {
+    grid-template-columns: 1fr;
+}
+
+.Set3 .du .first {
+    grid-row: 1;
+}
+
+.Set3 .du .second {
+    grid-row: 2;
+}
+
+
+.Set3 .shi {
+    grid-template-rows: repeat(5, auto);
+}
+
+.Set3 .shi .one {
+    grid-row: 1;
+    grid-column: 1/-1;
+}
+
+.Set3 .shi .two {
+    grid-row: 2 / span 2;
+    grid-column: 1;
+}
+
+.Set3 .shi .three {
+    grid-column: 2;
+    grid-row: 3 / span 2;
+}
+
+.Set3 .shi .four {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.Set3 .shi .five {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+
 
 
 #refSecTitle {
@@ -205,25 +307,36 @@ ul {
 }
 
 #references {
-    justify-self: center;
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 
-    column-gap: 5vw;
+    column-gap: 4%;
+    display: flex;
+    flex-flow: row wrap;
     align-items: flex-start;
-    justify-content: center;
+    row-gap: 2rem;
+    width: 100%;
+    justify-content: space-between;
 }
 
-#references * {
+
+#references>div {
+    flex-basis: 48%;
+}
+
+#references>div.Horizontal {
+    order: 1;
+}
+
+#references>div.Square {
+    order: 2;
+}
+
+
+#references>div *:not(.caption) {
     width: 100%;
 }
 
-#references>.refsection {
-
-    display: flex;
-    flex-direction: column;
-    row-gap: 6vw;
+.flipcard_front {
+    margin-bottom: .33rem;
 }
 
 .caption {
@@ -234,17 +347,162 @@ ul {
 }
 
 @media screen and (min-width:800px) {
-    .flipcard, .flipcard_inner, .flipcard_front{
+
+    .flipcard,
+    .flipcard_inner,
+    .flipcard_front {
         animation-fill-mode: none !important;
     }
 
-    /* #references{
+    .set2 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* .set2 .square{
+        grid-column-end: span 2;
+    } */
+
+    .set2 h2 {
+        grid-column: 1/-1;
+    }
+
+
+    .set2 .two {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .set2 .three,
+    .set2 .four {
+        grid-row: 3;
+    }
+
+    .set2 .xLong {
+        grid-column: 3;
+        grid-row: 2/ span 2;
+    }
+    .row_four {
+        grid-row: 5;
+    }
+
+    .set2 .special {
+        grid-column: 1/-1;
+        grid-row-end: span 2;
+    }
+
+    .set2 .Horizontal {
+        grid-column: 1/ span 2;
+        grid-row: 4;
+    }
+
+    .set2 .square {
+        grid-column: 3;
+        grid-row: 4;
+    }
+
+
+
+    .Set3 .un .square {
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+
+    .Set3 .un .fourth {
+        grid-row: 3;
+        grid-column: 2;
+    }
+
+    .Set3 .un .square {
+        grid-row: 1;
+        grid-column: 1 / -1;
+    }
+
+
+    .set3partition.san {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 2rem;
+    }
+
+    .caption {
+        width: 80%;
+    }
+
+    #references {
+        justify-content: flex-start;
+    }
+
+    #references>div {
+        flex-basis: 30%;
+        /* max-width: 30%; */
+    }
+
+
+    @media screen and (min-width:900px) {
+
+        #references {
+            column-gap: 5%;
+        }
+
+        #references>div {
+            flex-basis: 20%;
+        }
+
+        #references>div.Horizontal,
+        #references>div.Square {
+            flex-basis: 45%;
+        }
+
+        #references>div.Horizontal {
+            order: 1;
+        }
+
+        #references>div.Square {
+            order: 2;
+            max-width: 30%;
+        }
 
     }
-    #references>.refsection{
-        flex-direction: row;
-    } */
 
 
 }
 
+@media screen and (min-width:1025px) {
+
+    .set3partition.du {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1.77rem;
+    }
+
+    .set3partition.du .vertical{
+        grid-column: 3;
+        grid-row: 1 / span 2;
+        /* align-self: end; */
+    }
+    .set3partition.du .Horizontal{
+        grid-column: 1 / span 2;
+
+    }
+
+    .worksCited {
+        padding-bottom: 13vh;
+    }
+
+    #references>div {
+        flex-basis: 25%;
+    }
+
+
+    @media screen and (min-width:1200px) {
+
+        #references>div {
+            flex-basis: 25%;
+        }
+
+        #references>div.Horizontal {
+            flex-basis: 37%;
+        }
+
+    }
+
+}
