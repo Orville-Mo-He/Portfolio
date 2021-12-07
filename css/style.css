@@ -427,6 +427,7 @@ blockquote {
     flex-direction: column;
     margin-top: 1.77rem;
     margin-left: .1rem;
+    row-gap: 1.777rem;
 }
 
 /* .quick_info> li{
